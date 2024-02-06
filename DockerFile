@@ -1,0 +1,8 @@
+# pull the httpd docker image from the docker hub
+FROM httpd:latest
+
+# Person who is the maintainer of the docker 
+MAINTAINER "vikasmsbenki@gmail.com"
+
+# Copy the Files from source to destination
+COPY ./ /usr/local/apache2/htdocs
